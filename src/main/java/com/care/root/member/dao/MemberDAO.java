@@ -107,13 +107,15 @@ public class MemberDAO {
 		}
 		return result;
 	}
-	public void delete(String userId) {
+	public int delete(String userId) {
 		String sql = "delete from jsp_member where id='"+userId+"'";
+		int result = 0;
 		try {
 			ps = con.prepareStatement(sql);
-			ps.executeUpdate();
+			result = ps.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		return result;
 	}
 }

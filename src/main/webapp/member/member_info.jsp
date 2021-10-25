@@ -23,6 +23,7 @@
 	addr : ${mem.addr}<br>
 	<hr>
 	<button type="button" onclick="location.href='modify.jsp?id=${mem.id}'">수정</button>
+
 <c:set var="session_id" value="${mem.id}" scope="session"/>
 	<button type="button" onclick="location.href='delete.jsp'">삭제</button>
 </div>
