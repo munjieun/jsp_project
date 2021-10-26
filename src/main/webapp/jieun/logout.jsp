@@ -14,7 +14,7 @@
 			location.href="${contextPath}/jieun/login.jsp"
 		</script>
 	</c:if>
-	
+
 	<script type="text/javascript">
 		alert('로그아웃 되었습니다.')
 		location.href="${contextPath}/jieun/login.jsp"
