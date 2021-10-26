@@ -16,7 +16,7 @@
 <div class="wrap">
 	<form action="modify_save.jsp" method="post">
 		<input type="hidden" name="id" value="${mem.id}">
-		id : <lable><b>${param.id}</b></lable><br>
+		id : <label><b>${param.id}</b></label><br>
 		pwd : <input type="text" name="pwd" value="${mem.pwd}"><br>
 		name : <input type="text" name="name" value="${mem.name}"><br>
 		addr : <input type="text" name="addr" value="${mem.addr}"><br>
