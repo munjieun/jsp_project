@@ -35,7 +35,14 @@ nav ul li a:hover {
 <nav>
     <ul>
 		<li><a href="${contextPath}/default/main.jsp">HOME</a></li>
+		<c:if test="${loginUser != null}">
+			<li><a href="${contextPath}/jieun/logout.jsp">LOGOUT</a></li>
+		</c:if>
+		<c:if test="${loginUser == null}">
+			<li><a href="${contextPath}/jieun/login.jsp">LOGIN</a></li>
+		</c:if>
 		<li><a href="${contextPath}/member/memberView.jsp">MEMBER_SHIP</a></li>
+		<li><a href="${contextPath}/jieun/board.jsp">BOARD</a></li>
     </ul>
 </nav>
 </div>
